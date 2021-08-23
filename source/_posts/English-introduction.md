@@ -130,11 +130,11 @@ mature有成熟，完善之意，pre有在前，前面之意，所以premature�
 
 下载链接: https://pan.baidu.com/s/1oV6AxRUlX1c7mpE352bt8w 提取码: uxtw 
 
+## Windows & Mac
+
 1. 下载GodenDict应用程序：
    1. Mac： GoldenDict-1.5.0-RC2-209-gfe9312e(Qt_563)
    2. Windows： GoldenDict-1.0.1-Portable
-   3. Android：待上传，安装和电脑端也有所不同
-   4. iOS： 尚未支持，可以考虑使用欧路词典
 2. 下载词典文件并解压
    1. En-En-Longman_Pronunciation3.zip
    2. En-En_OALD8.zip
@@ -156,6 +156,17 @@ Mac上会有如下界面异常，
 最后，可以把这个选项勾选。
 
 ![](https://s3.bmp.ovh/imgs/2021/08/79f7c59f09d94491.png)
+
+## Android
+
+1. 下载Android APK并安装：[下载链接](http://goldendict.mobi/downloads/android/free/)
+2. 下载词典文件：上一节百度云 Android 目录（此目录下的文件是从词典文件压缩包里面提取，去掉音频和图片，以减少手机存储占用）
+3. 将下载的词典文件存放于手机根目录的：GoldenDict 文件夹（注意命名，大小写完全一致）
+4. 手机上打开GoldenDict，此时先建立索引，完毕就可以正常使用。
+
+## iOS： 
+
+尚未支持，可以考虑使用欧路词典或其他，并按照类似思路，安装词典即可。
 
 
 
