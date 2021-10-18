@@ -5,6 +5,7 @@ date: 2021-09-16 21:55:07
 ---
 
 
+
 # 总结
 
 1. 使用Fragment的Activity需要继承`FragmentActivity` 这里有派发生命周期方法给FragmentManager，再派发给旗下Fragment。
