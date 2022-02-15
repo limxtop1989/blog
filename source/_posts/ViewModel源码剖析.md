@@ -41,14 +41,37 @@ public class MyActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         // Create a ViewModel the first time the system calls an activity's onCreate() method.
         // Re-created activities receive the same MyViewModel instance created by the first activity.
-
+				// 1. ViewModel实例挂载在this实例里，有点相当于是this实例的成员变量
         MyViewModel model = new ViewModelProvider(this).get(MyViewModel.class);
+        // 2. 这里的this参数，决定观察者的生命周期。注意，如果此参数是activity实例，而当前类是fragment，则fragment实例内存泄漏
         model.getUsers().observe(this, users -> {
             // update UI
         });
     }
 }
 ```
+
+
+
+注意，observe这里第一个参数，决定观察者的生命周期。所以，如下示例代码，此参数是activity实例，而当前类是fragment，则fragment实例内存泄漏，因为监听实例生命周期和Activity一致，而它持有Fragment实例引用，导致Fragment在Activity生命周期内无法被回收。
+
+```java
+public class MyFragment extends Fragment {
+    public void onCreate(Bundle savedInstanceState) {
+        // Create a ViewModel the first time the system calls an activity's onCreate() method.
+        // Re-created activities receive the same MyViewModel instance created by the first activity.
+        MyViewModel model = new ViewModelProvider(this).get(MyViewModel.class);
+        
+        model.getUsers().observe(requireActivity(), users -> {
+            // update UI
+        });
+    }
+}
+```
+
+
+
+
 
 # 源码剖析
 
@@ -250,43 +273,3 @@ public <T extends ViewModel> T get(@NonNull String key, @NonNull Class<T> modelC
 ```
 
 
-
-# 工作推荐
-
-Android开发工程师
-
-### 职位描述：
-
-岗位职责：
-
-1. 负责Android平台的产品开发和维护
-2. 负责相关产品的优化和故障修复
-3. 根据相关需求制定开发计划
-4. 针对新技术的探索  
-
-岗位要求：
-
-1. 对AndroidSDK的深入理解
-2. 扎实的语言基础，能熟练使用java/c/kotlin中至少一门语言、对相应的数据结构实现有研究
-3. 熟悉并了解常用第三方库的工作原理，并能根据项目要求进行必要改造
-4. 具有一定的架构能力，能编写高质量代码
-5. 视野开阔，能跟踪行业相关最新动态并应用到项目中
-6. 以下技能/经历将优先录取
-   -掌握opengles，能够熟练编写glsl
-   -音视频编解码、播放器开发相关经验
-   -熟练使用android.graphics包下相关api
-   -熟悉opencv，熟练编写jni
-   -使用过深度学习相关框架，并成功移植到Android上
-   -有开源项目发布并长期维护
-
-### 工作地址
-
-[上海](https://www.lagou.com/jobs/list_?city=上海#filterBox) - [徐汇区](https://www.lagou.com/jobs/list_?city=上海&district=徐汇区#filterBox) - [徐家汇](https://www.lagou.com/jobs/list_?city=上海&district=徐汇区&bizArea=徐家汇#filterBox) - 天钥桥路909号3号楼607
-
-### 联系方式
-
-miaoxin.li@versa-ai.com
-
-### 我们的产品
-
-不咕剪辑 & 马卡龙玩图
