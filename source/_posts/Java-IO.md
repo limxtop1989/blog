@@ -6,9 +6,9 @@ date: 2022-09-10 10:18:36
 
 # InputStream
 InputStream: 输入流的抽象，提供应用程从内存读取任意字节数（read指针向后偏移），跳过，标记流位置（标记一个索引位置，reset后，read指针会重置为mark的值），流剩余字节数的API。
-![](https://tva1.sinaimg.cn/large/e6c9d24egy1h61dub1vbaj20pq08o3z5.jpg)
+![data_structure](https://tva1.sinaimg.cn/large/e6c9d24egy1h61dub1vbaj20pq08o3z5.jpg)
 
-![](https://tva1.sinaimg.cn/large/e6c9d24egy1h61qf8zdv5j21bz0u0n5h.jpg)
+![input_stream_class_diagram](https://tva1.sinaimg.cn/large/e6c9d24egy1h63mdvxjnlj20n30degng.jpg)
 1. FilterInputStream: 算是装饰者，包装或者聚合了`InputStream`，使用它作为基本的数据源。覆盖`InputStream`所有方法，简单的把方法调用转发给`InputStream`。
 ``` java   
 public abstract class InputStream implements Closeable {
@@ -241,7 +241,7 @@ class SocketInputStream extends FileInputStream {
 13. CheckedInputStream: 维护一个读取数据的校验和功能，可以验证输入数据的完整性。
 > An input stream that also maintains a checksum of the data being read. The checksum can then be used to verify the integrity of the input data.
 # OutputStream
-![](https://tva1.sinaimg.cn/large/e6c9d24egy1h61qgctukyj218z0u0wlk.jpg)
+![output_stream_class_diagram](https://tva1.sinaimg.cn/large/e6c9d24egy1h63mf0qgkqj20la0dw3zx.jpg)
 输出流总体上和输入流类似，只是方向相反。比如`BufferedOutputStream`有字节缓冲区`byte buf[]`，接收应用程序的写入，当缓冲区写满了，就调用装饰的输出流`OutputStream out`。`PrintStream`比较特殊，涉及到`Writer`，我们放到`Writer`部分展开。
 ```java
 class BufferedOutputStream extends FilterOutputStream {
@@ -260,4 +260,77 @@ class BufferedOutputStream extends FilterOutputStream {
 }    
 ```
 
+# Reader
+![reader_class_diagram](https://tva1.sinaimg.cn/large/e6c9d24egy1h63mgxpb3oj20nd0c875q.jpg)
+一次读取`InputStream`的两个字节，并使用指定的字符集解析成对应字符。Java中一个`char`占用2`byte`，但对于UTF-8字符集，它的编码长度是可变的，用1`byte·来编码常见字符。
+> A char represents a character in Java (*). It is 2 bytes large (or 16 bits).
+That doesn't necessarily mean that every representation of a character is 2 bytes long. In fact many character encodings only reserve 1 byte for every character (or use 1 byte for the most common characters).
 
+1. InputStreamReader:  作为字节流到字符流的桥接，读取一个或者多个字节，使用字符集解码成对应的字符。使用装饰者模式实现，解码工作由`StreamDecoder`完成。
+
+> An InputStreamReader is a bridge from byte streams to character streams: It reads bytes and decodes them into characters using a specified charset. The charset that it uses may be specified by name or may be given explicitly, or the platform's default charset may be accepted.
+Each invocation of one of an InputStreamReader's read() methods may cause one or more bytes to be read from the underlying byte-input stream. To enable the efficient conversion of bytes to characters, more bytes may be read ahead from the underlying stream than are necessary to satisfy the current read operation.
+For top efficiency, consider wrapping an InputStreamReader within a BufferedReader. For example:
+   `BufferedReader in = new BufferedReader(new InputStreamReader(System.in));`
+
+2. FileReader: 实现很言简意赅和巧妙的令人叹为观止。提供`FileInputStream`给`InputStreamReader`作字节流数据源，就完事了，整个类才三个重载的构造器。
+```java 
+public class FileReader extends InputStreamReader {
+   /**
+    * Creates a new <tt>FileReader</tt>, given the name of the
+    * file to read from.
+    *
+    * @param fileName the name of the file to read from
+    * @exception  FileNotFoundException  if the named file does not exist,
+    *                   is a directory rather than a regular file,
+    *                   or for some other reason cannot be opened for
+    *                   reading.
+    */
+    public FileReader(String fileName) throws FileNotFoundException {
+        super(new FileInputStream(fileName));
+    }
+}    
+```
+3. BufferedReader: 也是使用装饰者模式。内部定义一个缓冲区，一次性读取源字符流一大块字符，以此对外提供字符流。
+4. FilterReader: 同样是装饰者模式。里面啥也没做，所有的消息都转发给被装饰者，即内部的`Reader`.
+5. PushbackReader: 撤销读的实现很巧妙，使用`char[] buf;` 并且索引`pos`初始为size，unread的字符写在这里，后续的读优先从这里读，里面如果没有数据，再从被装饰的`Reader`读。
+```java
+public class PushbackReader extends FilterReader {
+
+    /** Pushback buffer */
+    private char[] buf;
+
+    /** Current position in buffer */
+    private int pos;
+
+    /**
+     * Creates a new pushback reader with a pushback buffer of the given size.
+     *
+     * @param   in   The reader from which characters will be read
+     * @param   size The size of the pushback buffer
+     * @exception IllegalArgumentException if {@code size <= 0}
+     */
+    public PushbackReader(Reader in, int size) {
+        super(in);
+        if (size <= 0) {
+            throw new IllegalArgumentException("size <= 0");
+        }
+        this.buf = new char[size];
+        this.pos = size;
+    }
+}
+```    
+
+6. StringReader: 使用字符串作为字符流的数据源。
+7. CharArrayReader: 使用字符数组作为字符流的数据源，里面的实现就全都是数组操作了。
+8. PipedWriter: 与`PipedInputStream`类似，只是API接口参数从`byte` 换成了 `char`。
+7. LineNumberReader: 增加字符流里的行号识别功能。
+# Writer
+与`Reader`方向相反，和`OutputStream`类似，不再赘述。
+![write_class_diagram](https://tva1.sinaimg.cn/large/e6c9d24egy1h63mhs54j9j20in0gbq4c.jpg)
+
+# RandomAccessFile
+把文件当成一个`byte[]`，支持同时读写操作，读写指针做相应偏移。
+![](https://tva1.sinaimg.cn/large/e6c9d24egy1h63mlwea47j20oi09sq3m.jpg)
+
+![random_class_diagram](https://tva1.sinaimg.cn/large/e6c9d24egy1h63mjpax45j206p05e3yk.jpg)
