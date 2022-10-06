@@ -76,15 +76,15 @@ Email: limxtop@gmail.com
 
 举个例子: 
 $$
-\cos(A+B) = \cos A∗\cos B −\sin A∗ \sin B  \tag{1}
+\cos(A + B) = \cos A ∗ \cos B −\sin A ∗ \sin B  \tag{1}
 $$
 $$
-\sin(A+B) = \sin A∗\sin B + \cos A ∗ \cos B  \tag{2}
+\sin(A + B) = \sin A ∗ \cos B + \cos A ∗ \sin B  \tag{2}
 $$
 $$
-\tan(A+B) = \frac{\sin(A+B)}{\cos(A+B)} = \frac{(\tan A ∗ \tan B +1)}{1− \tan A∗\tan B)}  \tag{3}
+\tan(A + B) = \frac{\sin(A + B)}{\cos(A + B)} = \frac{(\tan A + \tan B)}{1− \tan A ∗ \tan B)}  \tag{3}
 $$
-如上数学公式还记得吧?当年的女数学老师只是用复杂的方法证明其正确，却没有教会我们如何推理记忆。那时，同学们只能靠大量的解题，在重复的训练中强化记忆，但只要训练中断时日，记忆可能就会出现偏差。 
+如上数学和差角公式还记得吧?当年的女数学老师只是用复杂的方法证明其正确，却没有教会我们如何推理记忆。那时，同学们只能靠大量的解题，在重复的训练中强化记忆，但只要训练中断时日，记忆可能就会出现偏差。 
 
 但其实，只需要记得图3矩形框里的几何图形及其意义，上面一系列相关的公式可以一字不落地推理得出，简洁直观，一目了然。 
 
