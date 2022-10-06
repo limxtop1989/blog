@@ -106,6 +106,10 @@ deploy:
   repo: git@github.com:limxtop1989/limxtop
   branch: main
 
+- type: git
+  repo: git@github.com:limxtop1989/limxtop1989.github.io.git
+  branch: blog
+
 # edit for Theme.shoka
 autoprefixer:
   exclude:
