@@ -126,7 +126,7 @@ mature有成熟，完善之意，pre有在前，前面之意，所以premature�
 ## 高频词汇优先
 ![](https://tva1.sinaimg.cn/large/008vxvgGgy1h90738rd6lj30yz0u0n1f.jpg)[^5]
 [牛津按照CEFR英语水平等级分组词汇](https://www.oxfordlearnersdictionaries.com/wordlists/oxford3000-5000) 我的做法是将词汇表不懂的单词收集过滤，并拷贝词典的释义等详细内容，按照遗忘曲线记忆，将掌握词汇剔除，重复下一轮，如此反复，直到都掌握吃透。其他词汇书也是如此进行。
-高频词汇平时用的多，自然比较容易记住，产出投入比比较高。学到的词汇要平时多用，听说读写最好雨露均沾。 
+高频词汇平时用的多，自然比较容易记住，产出投入比比较高。学到的词汇要平时多用，听说读写最好雨露均沾。
 [词汇测试](https://www.oxfordonlineenglish.com/english-level-test/vocabulary)
 [欧洲共同语言参考标准](https://www.coe.int/en/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale)，这里应该也会提供很多资源，有时间可以探究一下。
 
