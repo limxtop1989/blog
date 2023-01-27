@@ -4,7 +4,7 @@ date: 2023-01-08 12:01:26
 tags: 晚霞
 ---
 
-![](https://tva1.sinaimg.cn/large/008vxvgGgy1h9w3xxbyokj30hs0lhacr.jpg)
+![](https://p.ipic.vip/rvdkpt.jpg)
 
 作者：火山
 公众号：火山与木星

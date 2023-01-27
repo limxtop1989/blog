@@ -3,7 +3,7 @@ title: 柳德米拉·乌利茨卡娅
 date: 2022-11-28 22:52:20
 tags:
 ---
-![](https://tva1.sinaimg.cn/large/008vxvgGgy1h8l8exckf3j30ka0f70uw.jpg)
+![](https://p.ipic.vip/eyupg5.jpg)
 
 我们有雪亮的眼睛，
 你有军警宪特。
