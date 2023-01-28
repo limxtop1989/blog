@@ -2,11 +2,11 @@
 title: 如何赚大钱
 math: true
 date: 2022-10-19 22:53:22
-tags:
+tags: 财富，赚钱
 ---
 
-#
-创造财富是致富的一种直接的方式（Creating wealth is a way to get rich.）
+# 题记
+创造财富是致富的一种直接的方式。（Creating wealth is a way to get rich.）而财富，是你身上拥有，且别人需要的东西。
 
 # 途径
 如果想变得富有，最好的方式是创立或者加盟初创科技公司，特别是攻克技术难题的公司。这是一种几百年来，屡试不爽可靠的致富方式。
