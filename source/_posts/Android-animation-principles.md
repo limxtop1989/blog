@@ -7,7 +7,7 @@ math: true
 
 # 动画原理
 
-动画的本质是，物体随着时间，从初始值到最终值的连续变化。所以，定义一个动画有三个要素，动画时间即duration，动画初始和最终值。最基础原始的关系是动画时间和动画值成正比例。
+动画的本质是，动画对象随着时间，从初始值到最终值的连续变化。所以，定义一个动画有三个要素，动画时间即duration，动画初始和最终值。最基础原始的关系是动画时间和动画值成正比例（线性插值）。
 $$
 \frac{t}{duration} = \frac{AnimateValue}{end - start} \tag{1}
 $$
@@ -19,7 +19,7 @@ $$
 在Android内部实现上，会将初始值到最终值切分成诸多在动画时间轴均匀分布的关键帧KeyFrame，这个类有两个重要成员变量：
 
 1. mFraction：当前关键帧对应动画时间与duration的比值。
-2. mValue：在当前动画时间比时，物体的状态值，它由下一个关键帧值 - 上一个关键帧值，按mFraction / 时间差的比值计算得出。
+2. mValue：在当前动画时间比时，动画对象的状态值。
 
 抽象来看，公式$1$中，start & end 对应起始关键帧：KF(0, start)和结束关键帧: KF(1, end)。但如果只有这两个关键帧，物体就只能介于这两个关键帧的动画值之间线性变化，为了支持动画值可以挣脱这个局限，动画框架提供了关键帧的API，指定某关键帧（mFraction, mValue），其中mValue 可以在[start, end]之外。也可以提供关键帧计算函数，实现曲线运动轨迹而非线段。为此动画时间轴上t时，对应的动画值V计算方法扩展为：
 $$
@@ -61,7 +61,7 @@ AnimateValue = evaluate(fraction, \ prevKF.value, \ nextKF.value) \tag{4}
 $$
 以颜色值为例
 
-```javaj a
+```java
 public Object evaluate(float fraction, Object startValue, Object endValue) {
     int startInt = (Integer) startValue;
     int startA = (startInt >> 24) & 0xff;
