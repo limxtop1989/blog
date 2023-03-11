@@ -1,6 +1,8 @@
 ---
-title: Android Activity 转移类型检测
+title: Activity 转移类型检测
 date: 2021-07-17 20:26:30
+categories:
+- [Android]
 tags:
 ---
 

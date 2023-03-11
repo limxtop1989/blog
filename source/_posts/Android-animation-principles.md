@@ -1,6 +1,8 @@
 ---
 title: Android 动画原理
 date: 2022-07-24 22:42:18
+categories:
+- [Android]
 tags: Android, Animation, Animator
 math: true
 ---

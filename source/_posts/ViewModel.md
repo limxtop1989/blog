@@ -1,6 +1,8 @@
 ---
 title: ViewModel源码剖析
 date: 2021-09-19 18:44:37
+categories:
+- [Android]
 tags: ViewModel源码剖析, Android, ViewModel
 ---
 

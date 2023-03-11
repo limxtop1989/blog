@@ -1,11 +1,13 @@
 ---
 title: Android消息循环
 date: 2023-02-04 15:59:56
+categories:
+- [Android]
 tags: Android, message loop, 消息循环
 ---
 
 # 题记
-本文又几年前给同事们培训准备的资料整理而来，只是凭借印象，粗略记录框架原理和要点，需要新人花不少功夫自学探索。待闲暇时，待我重新阅读源码，再详细展开。本文需要具备英语阅读能力，如果尚缺，可以阅读[英语自学指南](https://bewaters.me/limxtop/2021/08/18/English-introduction/)。
+本文又几年前给同事们培训准备的资料整理而来，只是凭借印象，粗略记录框架原理和要点，需要新人花不少功夫自学探索。待闲暇时，待我重新阅读源码，再详细展开。读懂消息循环，需要具备英语阅读能力，如果尚缺，可以阅读[英语自学指南](https://bewaters.me/limxtop/2021/08/18/English-introduction/)。
 
 # 用法
 线程是不具备消息循环的，需要调用`Looper.prepare()` & `Looper.loop()`才开启消息循环。系统已经在`ActivityThread` 帮忙主线程开启了消息循环，代码如下。

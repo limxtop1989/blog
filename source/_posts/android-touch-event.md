@@ -1,6 +1,8 @@
 ---
-title: Android Touch Event Dispatch
+title: Android 触摸事件派发
 date: 2022-08-19 22:42:18
+categories:
+- [Android]
 tags: Android, Touch Event Dispatch, 触摸事件派发
 ---
 

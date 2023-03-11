@@ -4,12 +4,12 @@
 
 # Site
 title: 若批评不自由，则赞美无意义
-subtitle: '程序员&文艺青年的后花园'
+subtitle: '有梦书架'
 description: ''
 keywords: Android
 author: 文理兼修电脑首席
 language: en
-timezone: ''
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -68,6 +68,12 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  computer-science: 计算机科学
+  Java: 
+  Essay: 杂谈
+  Android: android
+  Open Source: 开源
+  
 tag_map:
 
 # Metadata elements
