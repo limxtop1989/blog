@@ -1,13 +1,15 @@
 ---
-title: Android Translate Scale Rotate
+title: Android 双指触控 位移 缩放 旋转
 date: 2023-03-11 21:13:48
 tags: Android Translate Scale Rotate, multiple touch event, Android 双指触控，位移，缩放，旋转
+sticky: true
+math: true
 category:
 - [Android]
+
 ---
 # 效果
-![](https://s3.bmp.ovh/imgs/2023/03/14/25b977c77be405af.gif)
-![](https://pic.imgdb.cn/item/6410989cebf10e5d53bddfb4.gif)
+![demo](https://pic.imgdb.cn/item/6410989cebf10e5d53bddfb4.gif)
 # 代码实现
 ```kotlin
 package com.maxim.opengl
@@ -169,6 +171,24 @@ class TouchEventView(context: Context) : View(context) {
     }
 }
 ```
+![cross product and dot product](https://s3.uuu.ovh/imgs/2023/03/15/3519b041b587e7e5.png)
+# 向量点乘 Dot Product
+$$
+\begin{equation}
+\vec{AB} \cdot \vec{AC} = \parallel \vec{AB} \parallel * \parallel \vec{AC} \parallel * \cos\theta  \label{dotproduct} \tag{1}
+\end{equation}
+$$
+$$
+\vec{AB} \cdot \vec{AD} = \parallel \vec{AB} \parallel * \parallel \vec{AD} \parallel * \cos\theta \tag{2}
+$$
+$\theta$ 的取值范围为 $[0, \pi]$，由于从$\vec{AB}$ 顺时针旋转到 $\vec{AC}$ 和从 $\vec{AB}$ 顺时针旋转到 $\vec{AD}$ 计算出来的$\theta$ 是一样的，无法区分。而对于`Canvas.rotate(degree)`，当`degree > 0 `，表示从向右方向顺时针旋转，当`degree < 0 `时，表示向右方向逆时针旋转。所以，对于 从$\vec{AB}$ 顺时针旋转 $\theta + 2 * (\pi - \theta) =  2 \pi - \theta$ 到 $\vec{AD}$，相当于从$\vec{AB}$ 逆时针旋转 $\theta$ 到 $\vec{AD}$。 也即公示$\ref{dotproduct}$ 所求 $\theta$ * 方向即可。+1 表示顺时针， -1 表示逆时针，而方向的值可由叉乘计算得出。
+# 向量叉乘 Cross Product
+如图左手坐标系，使用左手法则。
+$$\vec{AB} \times \vec{AC} = \vec{N_c} \tag{3}$$ 
+$\vec{N_c}$指向 $-z$
+$$\vec{AB} \times \vec{AD} = \vec{N_d} \tag{4}$$
+$\vec{N_d}$指向 $z$
+
 
 # 参考文档
 - [Android multiple touch event](https://developer.android.com/develop/ui/views/touch-and-input/gestures/multi)
