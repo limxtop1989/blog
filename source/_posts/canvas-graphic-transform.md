@@ -2,7 +2,6 @@
 title: Android 双指触控 位移 缩放 旋转
 date: 2023-03-11 21:13:48
 tags: Android Translate Scale Rotate, multiple touch event, Android 双指触控，位移，缩放，旋转
-sticky: true
 math: true
 category:
 - [Android]
@@ -27,6 +26,9 @@ import kotlin.math.sqrt
 class TouchEventView(context: Context) : View(context) {
 
     private val rect: RectF = RectF(0f, 0f, 400f, 400f)
+    private val desRect = RectF()
+    private val matrixST = Matrix()
+
     private val paint: Paint = Paint()
 
     init {
@@ -42,6 +44,8 @@ class TouchEventView(context: Context) : View(context) {
     private var dy: Float = 0f
     private var scale: Float = 1f
     private var angle: Float = 0f
+
+
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
         when (event.actionMasked) {
@@ -97,7 +101,7 @@ class TouchEventView(context: Context) : View(context) {
     private fun rotate(event: MotionEvent) {
         val pointerX = event.getX(1)
         val pointerY = event.getY(1)
-        // multiply y component by -1 to make y-axis points up. 
+        // multiply y component by -1 to make y-axis points up.
         // which maps view coordinate system to right-hand coordinate system.
         val prevVector = Vector(downPointerX - downX, -(downPointerY - downY), 0f)
         val nextVector = Vector(pointerX - event.x, -(pointerY - event.y), 0f)
@@ -120,12 +124,11 @@ class TouchEventView(context: Context) : View(context) {
 
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
-        val desRect = RectF()
-        val matrix = Matrix()
-        matrix.reset()
-        matrix.postScale(scale, scale, rect.centerX(), rect.centerY())
-        matrix.postTranslate(dx, dy)
-        matrix.mapRect(desRect, rect)
+
+        matrixST.reset()
+        matrixST.postScale(scale, scale, rect.centerX(), rect.centerY())
+        matrixST.postTranslate(dx, dy)
+        matrixST.mapRect(desRect, rect)
         canvas?.save()
         // clockwise when degrees is positive.
         canvas?.rotate(angle, desRect.centerX(), desRect.centerY())
@@ -181,16 +184,17 @@ $$
 $$
 \vec{AB} \cdot \vec{AD} = \parallel \vec{AB} \parallel * \parallel \vec{AD} \parallel * \cos\theta \tag{2}
 $$
-$\theta$ 的取值范围为 $[0, \pi]$，由于从$\vec{AB}$ 顺时针旋转到 $\vec{AC}$ 和从 $\vec{AB}$ 顺时针旋转到 $\vec{AD}$ 计算出来的$\theta$ 是一样的，无法区分。而对于`Canvas.rotate(degree)`，当`degree > 0 `，表示从向右方向顺时针旋转，当`degree < 0 `时，表示向右方向逆时针旋转。所以，对于 从$\vec{AB}$ 顺时针旋转 $\theta + 2 * (\pi - \theta) =  2 \pi - \theta$ 到 $\vec{AD}$，相当于从$\vec{AB}$ 逆时针旋转 $\theta$ 到 $\vec{AD}$。 也即公示$\ref{dotproduct}$ 所求 $\theta$ * 方向即可。+1 表示顺时针， -1 表示逆时针，而方向的值可由叉乘计算得出。
+$\theta$ 的取值范围为 $[0, \pi]$，由于从$\vec{AB}$ 顺时针旋转到 $\vec{AC}$ 和从 $\vec{AB}$ 顺时针旋转到 $\vec{AD}$ 计算出来的$\theta$ 是一样的，无法区分。而对于`Canvas.rotate(degree)`，当`degree > 0 `，表示从向右方向顺时针旋转，当`degree < 0 `时，表示向右方向逆时针旋转。所以，对于从$\vec{AB}$ 顺时针旋转 $\theta + 2 * (\pi - \theta) =  2 \pi - \theta$ 到 $\vec{AD}$，相当于从$\vec{AB}$ 逆时针旋转 $\theta$ 到 $\vec{AD}$。 也即公示$\ref{dotproduct}$ 所求 $\theta * direction$ 即可。+1 表示顺时针， -1 表示逆时针，而 direction 的值可由叉乘计算得出。
 # 向量叉乘 Cross Product
 如图左手坐标系，使用左手法则。
 $$\vec{AB} \times \vec{AC} = \vec{N_c} \tag{3}$$ 
-$\vec{N_c}$指向 $-z$
+$\vec{N_c}$指向 $-z, direction = +1$
 $$\vec{AB} \times \vec{AD} = \vec{N_d} \tag{4}$$
-$\vec{N_d}$指向 $z$
+$\vec{N_d}$指向 $+z, direction = -1$
 
 
-# 参考文档
+# 参考
+- [Introduction to Linear Algebra](https://book.douban.com/subject/26824921/)
 - [Android multiple touch event](https://developer.android.com/develop/ui/views/touch-and-input/gestures/multi)
 - [使用斜率计算旋转角度](https://juejin.cn/post/6844904162744860685)
 - [使用向量计算旋转角度](https://juejin.cn/post/6844904166700089351)

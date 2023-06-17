@@ -13,7 +13,7 @@ categories:
 
 # 本文要点
 1. 解释很多人十年英语刻苦学习，最后多以失败告终的根源。
-2. 解释坚持和投入**有效**的训练是学习掌握任何一门语言和科学技术的必要条件。
+2. 解释坚持和投入**有效**的训练，沉浸式学习是掌握任何一门语言和科学技术的必要条件。
 3. 阐述成人学习掌握新语言的能力胜于孩童，只是缺乏训练环境。
 3. 陈述如何搭建个人训练环境并展开有效训练。
 4. 描述如何降低训练难度，使学习变得舒适自然，无需头悬梁，锥刺股。
@@ -40,9 +40,9 @@ categories:
 
 **那么为什么懵懂的孩童时代学习语言进步显著，而认知能力和学习能力已经今非昔比的成人学习语言却举步维艰?在我看来是因为前者在学习语言的时间和精力上投入比后者多出很多**。我能预知到这并非是一句能够让人轻易信服的结论，毕竟以我个人经历而言，经过小学六年的学习实践，自己已经具备初步的汉语表达能力，著书立说尚且有待时日，但与人日常攀谈，向来得心应手。但从初中到大学学习了10年的英语，在你摩拳擦掌，准备开口说的时候，此刻他们却纷纷打地鼠一般给你玩捉迷藏，以至于你憋红了脸，也只能支支吾吾，拼凑出词不达意，漏洞百出的词句。养兵千日，期待着有朝一日可以用兵，却发现无计可施，还有什么比这个更令人沮丧?以至于让多少人，放弃了坚持。 
 
-那么很多人都会疑问，我们学习汉语的时间怎么会比英语多呢?这里的玄机在于我们计算语言学习的时间有失偏颇，我们学习汉语并非只是在语文课上，我们上数学课也是用汉语，由于我们的生活环境，日常的交流也是用汉语，甚至到了中学我们的生物、物理、化学、地理、政治、历史课等除了英语课外所有的科目，还有我们所阅读的课外读物都是汉语，所以虽然只有六年的时间，但在这短短的时间里面因为我们所处的环境，使得我们有意无意地接收大量的的听说读写能力的训练和强化。而英语则并非如此。 
+那么很多人都会疑问，我们学习汉语的时间怎么会比英语多呢?这里的玄机在于我们计算语言学习的时间有失偏颇，我们学习汉语并非只是在语文课上，我们上数学课也是用汉语，由于我们的生活环境，日常的交流也是用汉语，甚至到了中学我们的生物、物理、化学、地理、政治、历史课等除了英语课外所有的科目，还有我们所阅读的课外读物都是汉语，所以虽然只有六年的时间，但在这短短的时间里面因为我们所处的环境，使得我们有意无意地接收大量的的听说读写能力的训练和强化。而英语则并非如此。 我们只是每天在四十五分钟的课堂学习英语，而且是阅读和语法学习居多。
 
-**所以，我们的英语能力不尽人意，根源在于我们投入的训练和实践远远不够。** 
+**所以，我们的英语能力不尽人意，根源在于我们投入在生活中读写听说的训练和实践远远不够。** 
 
 使用工具是人类的天赋，而借助工具，或者外界力量用于辅助学习是一个很可取的选择。只是学习知识是一个将知识吸收内化的过程。当我们在学习的过程中，受挫，我们总是会感到沮丧，对自己失去信心。会有倾向求助于外界，期望有高人从天而降，对我们指点迷津，或者像神明一般施加法力，直接帮我们脱离苦海，比如我们会去报名参加培训，找老师，使用各种各样的APP。但这并不现实。师傅只是领进门，修行还是靠个人。学习这个过程大部分的工作还需要我们自己去完成。如果寻求外界获得成功，取得进步的决定性因素，并非是他们，而是因为你深度参与其中实践。**归根结底，他们都遵循，学习的本质是不断去亲身训练这一基本原则。所以，不管采取什么学习方法，有一点需要明白，万事求诸己。** 
 
@@ -50,15 +50,25 @@ categories:
 
 不可否认，学习又是一件艰难漫长的过程。**所以，坚持本身至关重要。而坚持，归根结底是坚持训练。** 
 
-**具体如何坚持训练呢？想必不是起早贪黑，狂背单词，或者捧着英文教科书念念有词，那样太辛苦了。于我而言，把自己接触的资讯全都切换为英文的，就好啦。将自己的手机，电脑语言切换成英语，所阅读的专业、非专业书籍也几乎是英文，平时多阅读英文文档呀，刷刷推特。不用特地投入时间学英语，但却在日如一日的重复里，慢慢地就可以感觉到进步和蜕变了。** 
+**具体如何坚持训练呢？想必不是起早贪黑，狂背单词，或者捧着英文教科书念念有词，那样太辛苦了。于我而言，把自己接触的资讯全都切换为英文的，就好啦。将自己的手机，电脑语言切换成英语，所阅读的专业、非专业书籍也几乎是英文，平时多阅读英文文档呀，刷刷推特。早晨醒来洗漱，做饭洗碗听听英语播客，不用特地投入时间学英语，但却在日如一日的重复里，慢慢地就可以感觉到进步和蜕变了。** 
 
-万事开头难，刚开始会感到不适，因为阅读一个段落，有些词汇不懂，有些句子每个单词都认识，就是不理解。这严重影响阅读速度不说，因为不能理解，让自己倍感沮丧。但其实不必太担心，逃离舒适区哪有那么舒服，只要不是过于难受，就坦然面对，不懂的单词，用电子词典查询，不懂的句子，查语法书。一点一滴的学习，随着日积月累，阅读速度和理解能力就与日俱增，付出学习和懵懂无知是一场此消彼长的对抗。
+万事开头难，刚开始会感到不适，因为阅读一个段落，有些词汇不懂，有些句子每个单词都认识，就是不理解。这严重影响阅读速度不说，因为不能理解，让自己倍感沮丧。但其实不必太担心，逃离舒适区哪有那么舒服，只要不是过于难受，就坦然面对，不懂的单词，用电子词典查询，不懂的句子，查语法书。一点一滴的学习，随着日积月累，阅读速度和理解能力就与日俱增，付出学习和懵懂无知是一场此消彼长的对抗。学习一种语言，并非一蹴而就，我们需要耐心。
 
 练习听力，阅读文字只是输入式的训练，真正而更加有效的训练方式，应该是输出，也就是写作和口语表达。当我们在做输入式训练的时候，其实我们可以不怎么动脑的，甚至当时心不在焉。所以，只有输入式训练的话，进步的道路步履维艰， 
 
 学习时间里，听说读写的训练，想必都不会有多大的问题。每个学习英语的成年中国人最大的问题在于，由于他们已经擅长汉语，在时间长出很多的非学习时间里，也就是日常生活中，他们习惯性地用汉语思考，因为用汉语可以很流畅，但用外语在屡屡碰壁，而语言是思考的载体，所以**思考才是训练的核心**。就像我们解题，阅读题目思考设计解答方案才是解题的核心，在纸上将答案表达出来不过是将思考输出。而这，就很好地解释了为什么小孩学习英语比较容易，因为当时他们的汉语与英语势均力敌，不像成年人，因为选择舒适的方式，不断地训练，强化了汉语，导致即使特别花时间精力对英语特别扶贫，也缩短不了他们的贫富差距。一方面我们做了大量的输入式训练，另一方面刻意规避输出式的训练，而这，正是，很多人学习英语，却收效甚微的根结所在。至于连输入式训练都没有的人，结果如何，自不必说。 
 
-**我们可以尝试着用英语去描述自己的所见所闻和所思所想，不懂的记录下来查询辞典。比如站在十字街头，会想到intersection，懂得词汇之后，可以尝试遣词造句，进一步地训练表达内容思想更加丰富的句子和短文，这些动作都是需要我们动脑思考的，是有效训练的很好实践。** 
+> 为更快掌握英语，需要我们尝试着用英语去描述自己的所见所闻和所思所想，不懂的记录下来查询辞典。在详细的英文释义和例句里理解它的含义。懂得词汇之后，可以尝试遣词造句，进一步地训练表达内容思想更加丰富的句子和短文，这些动作都是需要我们动脑思考的，是有效训练的很好实践。
+
+比如这次我遇见 exotic 时，command +CC 查询词典发现 exotic plumage. 我就可以造句：The peacocks have exotic plumage. 在我们的脑海里开始构建羽毛很漂亮的孔雀的画面，通过造句让本来没什么关系的单词建立连接，产生意义，并在我们的脑海里留下迹象，记忆自然更加深刻。里面好几个单词比较陌生，经过一段时间没有复习，可能会遗忘。没关系，我们现在就加更多的上下文。
+
+> The peacocks in the zoo have exotic plumage, they look very beautiful especially when the plumage is expanded like a paper fan.
+
+交给chatGPT 润色下：
+
+> The peacocks at the zoo boast exotic plumage that radiates breathtaking beauty, particularly when their feathers are spread like a delicate paper fan.
+
+DeepL翻译，仅供参考理解：动物园里的孔雀拥有异国情调的羽毛，散发着令人惊叹的美丽，特别是当它们的羽毛像一把精致的纸扇一样展开时。
 
 # 好的学习方法 
 
@@ -71,7 +81,15 @@ categories:
 所谓工欲善其事，必先利其器。当遇到不懂的单词，比如malicious，在有道或者Google翻译里面查询，能得到的只有其翻译，也许还会花点心思查看下对应的同义词、反义词、同根词。但这种学习方式不过是建立英文单词与汉语释义单一的映射，这是一种硬编码，记忆效率极其低下。可曾记得小学时候，我们为了记忆九九乘法表，花了一个星期的时间，天天背诵，终于烙印在脑里。 
 
 自己在使用英文资料学习编程的过程中，时常在思索如何解决快速索引释义的问题，偶然而又幸运的是，意外发现了GoldenDict辞典软件，如图2，它并本身并不提供任何辞典，但它支持种类繁多的辞典格式，与它们搭档，使得GoldenDict在众多辞典软件里所向披靡。我安装了好几部英英辞典，里面提供完整的释义，词组，相关的同义词和丰富的例句。我喜欢这种像神经网络一样，在与他物联系中记忆的方式，短时间内阅读辞典查询结果，可能不如狂背一百遍的记忆效果好，但我对自己的方法爱不释手，毕竟，单词并非独立的存在，它需要和其他单词组合拼凑成句子，才能构建表达完整的含义，也只有知道了组合后，我们才有可能学以致用。在丰富的组合连接之下，每个单词不再是一座孤岛，在记忆的深处都有迹可循，长期以往，这样可以有效地构建我们丰富的语言体系，和表达能力。毕竟，表达和思考，本质上无非就是向记忆索取词汇，但凡词汇索引建的好，这个过程就不会吃力。而单独记忆单词的结果是知道中文含义，但不知道如何使用，真的开口说话时，更是哑口无言，或者词不能大意。同时我很讨厌背诵，在时常检查背诵的初中时代，自己有过不幸被老师点名，在全班同学面前背诵文言文，却背不出一个完整的段落，申请背诵另外一篇，没想到依然差强人意。兴许是屡次三番摘得年级桂冠光芒的照耀，老师同学只是爆发出慈眉善目的笑声，险过一关。不过值得一提的是，时至今日，我依然记得初中课文里出现的几个句子“天下事有难易乎?为之，则难者亦易矣;不为，则易者亦难矣。人之为学有难易乎?学之，则难者亦易矣;不学，则易者亦难矣。” [^1] “无他，但手熟尔”[^2]，“故不积跬步，无以至千里；不积小流，无以成江海。”[^3]，“世之奇伟、瑰怪、非常之观，常在险远，而人之所罕至焉，故非有志者不能至也。”[^4]。它们启发与激励着我，每每灰心丧气的时候，鼓舞自己，再坚持一下。
-![](https://s3.bmp.ovh/imgs/2021/08/69bc4729f629349e.webp)
+
+单词释义，还可以点击播放朗读，练习听力
+![](https://pic1.imgdb.cn/item/6471c560f024cca1730fb1c2.png)
+
+相似词
+![](https://pic1.imgdb.cn/item/6471c3a0f024cca1730cd3ba.png)
+
+看图识词
+![](https://pic1.imgdb.cn/item/6471c3a0f024cca1730cd524.jpg)
 
 
 [^1]: 《为学》
@@ -128,8 +146,49 @@ mature有成熟，完善之意，pre有在前，前面之意，所以premature�
 ![](https://s3.bmp.ovh/imgs/2023/02/11/2d297e85a3356dc0.png)
 
 ## 系统学习 
-按照情景或者场景系统地学习词汇和用法，比如房子的物品名称，以及其相关的动词和对话表达，如图。 
-![](https://s3.bmp.ovh/imgs/2021/08/b8518865846f4d62.webp)
+按照情景或者场景系统地学习词汇和用法，以及其相关的动词和对话表达。比方说，dish是个初级词汇，我们很早就知道，它是盘子的意思，恐怕我们很多人也仅知道如此，但这对于我们语言表达还是词穷的。所以就算单词我们已经学过了，依然需要按照科学的方式重新学习。GoldenDict 一查，好家伙，居然还有这么名词意思。（后面的汉字是为了表达清晰，具体学习，千万别去想中文含义，原则依然是用英语学习英语，看到dish，不应该想到盘子，而是图画，或者英文释义或者例句，如果可以自己造句就更棒了）
+
+dish
+a flat container with low sides, for serving food from or cooking food in ⇨ bowl:
+![](https://s3.uuu.ovh/imgs/2023/06/07/327fabf5e4a1a030.png)
+
+* a big dish of curry (量词，一盘菜）
+* wash, dry put away, etc the dishes (泛指餐具，不仅是盘子了）
+* a restaurant specializing in Indonesian dishes (风味）
+* This soup is substantial enough to serve as a main dish (主菜） 
+* Mary's new boy-friend's quite a dish, isn't he? （帅气）
+
+还可以当动词用，想不到吧。
+* The scandal dished his hope of being elected. (使破灭）
+* Don't get into a fight with him: he can really dish it out. (attack sb fiercely with words or blows)
+* There were students dishing out leaflets to passers-by.
+* Could you dish up the fruits?
+
+看下相关的词汇。
+* dishful: About as much as a dish will hold.
+* dishy: physically attractive, or handsome.
+* dishcloth: Cloth for washing dish.
+* dishwasher: Machine or person that washes dishes.
+* dish-water: Water used for washing dishes. (Her coffee tastes like dish-water)
+
+相似词
+* food noun [uncountable and countable] things that people and animals eat: You can buy good fresh food in the market. | Do you like Japanese food?
+* dish noun [countable] a type of food that is cooked in a particular way: a traditional English dish | They also offer vegetarian dishes.
+* speciality British English, specialty American English noun [countable] a type of food that a restaurant or place is famous for: Fish dishes are a specialty of the region. | Home made pies are one of the hotel’s specialities.
+* delicacy noun [countable] an unusual food which people in a particular place like to eat: The local delicacies include laverbread (boiled seaweed). | I was keen to try out the local delicacies.
+* diet noun [countable] the type of food that someone usually eats: You shouldn’t have too much salt in your diet. | In the Andes, the main diet is beans, potatoes, and corn.
+* cooking noun [uncountable] food made in a particular way, or by a particular person: Herbs are used a lot in French cooking. | I love my Mum’s home cooking.
+* cuisine /kwɪˈziːn/ noun [countable] formal the food you can eat in a particular restaurant, country, or area: Italian cuisine | Trying the local cuisine is all part of the fun of travelling.
+* nutrition noun [uncountable] food considered as something that is necessary for good health and growth: a book on nutrition | Many homeless people suffer from poor nutrition.
+* nourishment /ˈnʌrɪʃmənt $ ˈnɜː-, ˈnʌ-/ noun [uncountable] goodness that you get from food, which helps your body to stay healthy: There's not much nourishment in fast food.
+* fare noun [uncountable] formal the kind of food that is served in a place – used especially when saying how interesting it is: In China you can feast on bird’s nest soup and other exotic fare. | Dinner was pretty standard fare (=the usual kind of food).
+
+
+还有哦，再把情景下有关联的有用词汇照此学一遍。
+![](https://s3.uuu.ovh/imgs/2023/06/03/86537a7659d0f73c.bmp)
+
+![](https://s3.uuu.ovh/imgs/2023/06/03/278784343549929c.bmp)
+天哪噜了。就一个小学词汇，把我一个大学毕业多年的人，一天学习词汇的时间额度给用光了，感觉收获满满呢。
 
 ## 高频词汇优先
 ![](https://s3.bmp.ovh/imgs/2023/01/11/bf447cc97d9d8a9b.png)[^5]
@@ -137,6 +196,9 @@ mature有成熟，完善之意，pre有在前，前面之意，所以premature�
 高频词汇平时用的多，自然比较容易记住，产出投入比比较高。学到的词汇要平时多用，听说读写最好雨露均沾。
 [词汇测试](https://www.oxfordonlineenglish.com/english-level-test/vocabulary)
 [欧洲共同语言参考标准](https://www.coe.int/en/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale)，这里应该也会提供很多资源，有时间可以探究一下。
+
+## 词汇记忆工具
+[单词记忆卡片](https://bewaters.me/2023/05/07/word-card-user-manual/) 类似百词斩，使用艾宾浩斯遗忘曲线调度记忆任务，唯一不同的是，本人自主开发，完全践行本篇文章所阐述的学习英语方法论和理念，配套使用，效果更佳。基本功能已经成型，闲暇时间依旧会持续迭代开发新功能，敬请谅解和期待。
 
 
 # 审慎对待任何学习方法 
@@ -158,7 +220,9 @@ mature有成熟，完善之意，pre有在前，前面之意，所以premature�
 
 
 # GodenDict 安装
-下载链接: https://pan.baidu.com/s/1oV6AxRUlX1c7mpE352bt8w 提取码: uxtw 
+我把一整套资源，包括软件，词典文件和Android 专用轻量版都放在百度网盘，但如果如网友反馈下载速度慢，或者想下载较新版本的词典软件，可以尝试第二种，自己分别下载。
+1. 全套下载链接: https://pan.baidu.com/s/1oV6AxRUlX1c7mpE352bt8w 提取码: uxtw 
+2. GoldenDict [下载链接](http://goldendict.org/download.php) ，[Mac版本下载链接](https://github.com/goldendict/goldendict/wiki)，[词典文件Dropbox下载](https://blog.yuanbin.me/posts/2013-01/2013-01-31_23-07-00/)
 
 ## Windows & Mac
 1. 下载GodenDict应用程序：
@@ -188,8 +252,8 @@ Mac上会有如下界面异常，
 
 ## Android
 1. 下载Android APK并安装：[下载链接](http://goldendict.mobi/downloads/android/free/)
-2. 下载词典文件：上一节百度云 Android 目录（此目录下的文件是从词典文件压缩包里面提取，去掉音频和图片，以减少手机存储占用）
-3. 将下载的词典文件存放于手机根目录的：GoldenDict 文件夹（注意命名，大小写完全一致）
+2. 下载词典文件：上一节下载好的词典。或者重新下载上一节百度云 Android 目录的文件（此目录下的文件是从词典文件压缩包里面提取，去掉音频和图片，以减少手机存储占用。）
+3. 将下载的词典文件存放于手机根目录的：GoldenDict 文件夹（注意命名，大小写完全一致，词典文件貌似得解压不可，不然GoldenDict无法识别）
 4. 手机上打开GoldenDict，此时先建立索引，完毕就可以正常使用。
 
 ## iOS： 
@@ -230,7 +294,8 @@ Mac上会有如下界面异常，
 
 
 # 听说
-使用podcast 订阅BBC learning English等练习听力，YouTube看英语视频。去参加英语角，平时和朋友聊天用英语说，都是不错的选择，不说也行，只要习惯用英语思考也可以。但，如果读写功底足够扎实，听说其实是水到渠成一般容易。
+使用podcast 订阅BBC learning English等练习听力，洗碗，坐公交都可以听听，坐在屋子无所事事的时候，也可以播放有一搭没一搭的听，实在听不懂的，可以将Pixel 手机的系统语音实时转字幕功能打开，看文字对比。YouTube看英语视频。去参加英语角，平时和朋友聊天用英语说，都是不错的选择。不说也行，只要习惯用英语思考也可以，让自己沉浸在英语环境里。这些事情都是我们日常生活，日复一日再做的，只是切换为英语了，所以，我们并没有花额外的时间投入英语，但我们的英语水平可以预见地，渐次提高，水到渠成。
+![](https://s3.uuu.ovh/imgs/2023/04/17/688470c7b93f1e2c.png)
 
 # Recap 重点回顾
 学习英语最重要的是个人思想上的转变，斯以为自己如果觉得英语不重要，没用，完全很容易半途而废。只有坚信不疑英语有用，重要，特别是可以预见英语对自己的工作生活有积极影响帮助的时候，对于大部分学生而言，确实如此，学习英语的动力自然后劲十足。英语难度由读写听说递增，学习顺序也理应如此，它和我们常说的听说读写南辕北辙。掌握英语得训练，训练的核心是输出，写作和口语表达，特别是其间的思考都应该用英语，切记在思维里先用中文思考，再翻译为英语用口语表达。更不用说平时的阅读了（切记不要翻译为中文在理解文字含义），但输出之前需要有扎实的基础，需要输入的训练，掌握词汇和语法，并做足够的阅读，必须安装使用英英词典，帮你在阅读遇到诸多生词，快速排除障碍。
@@ -241,8 +306,7 @@ Wechat: limxtop
 Twitter:  @limxtop
 
 # 最后
-
-英语的重要性不言而喻，相信各位好奇心切可以阅读到这里，自是一清二楚，希望各位可以学有所成。**如果本文令你受益匪浅，愿意慷慨解囊，可以点击donate 红色按钮，然后扫描二维码，一分也是爱。分享推荐给身边的朋友，也是不胜感激**。
+英语的重要性不言而喻，相信各位好奇心切可以阅读到这里，自是一清二楚，希望各位可以学有所成。如果本文令你受益匪浅，愿意慷慨解囊，可以点击donate 红色按钮，然后扫描二维码，一分也是爱。但这并不推荐，**分享推荐**此文给身边的朋友，会是更好的选择，举手之劳或许可以帮助他人更好地学习英语，无心插柳柳成荫。
 
 
 
