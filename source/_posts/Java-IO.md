@@ -8,9 +8,10 @@ categories:
 
 # InputStream
 InputStream: 输入流的抽象，提供应用程从内存读取任意字节数（read指针向后偏移），跳过，标记流位置（标记一个索引位置，reset后，read指针会重置为mark的值），流剩余字节数的API。
-![data_structure](https://p.ipic.vip/5vm3cq.jpg)
+![data_structure](https://s3.uuu.ovh/imgs/2023/07/07/af4a166586f90022.jpeg)
 
-![input_stream_class_diagram](https://p.ipic.vip/tb4a77.jpg)
+![input_stream_class_diagram](https://pic.imgdb.cn/item/64a828bf1ddac507cc366039.jpg)
+
 1. FilterInputStream: 算是装饰者，包装或者聚合了`InputStream`，使用它作为基本的数据源。覆盖`InputStream`所有方法，简单的把方法调用转发给`InputStream`。
 ``` java   
 public abstract class InputStream implements Closeable {
@@ -135,7 +136,7 @@ public class PipedInputStream extends InputStream {
     protected int out = 0;
 }    
 ```
-![](https://p.ipic.vip/voze2p.jpg)
+![](https://pic.imgdb.cn/item/64a829691ddac507cc38abe9.jpg)
 管道输入流维护写入，读出的下标索引，应用程序`read`，就从buffer读取数据`int ret = buffer[out++] & 0xFF;`
 ```java
 public class PipedInputStream extends InputStream {
@@ -243,7 +244,7 @@ class SocketInputStream extends FileInputStream {
 13. CheckedInputStream: 维护一个读取数据的校验和功能，可以验证输入数据的完整性。
 > An input stream that also maintains a checksum of the data being read. The checksum can then be used to verify the integrity of the input data.
 # OutputStream
-![output_stream_class_diagram](https://p.ipic.vip/vn8xrf.jpg)
+![output_stream_class_diagram](https://pic.imgdb.cn/item/64a82a161ddac507cc3ae480.jpg)
 输出流总体上和输入流类似，只是方向相反。比如`BufferedOutputStream`有字节缓冲区`byte buf[]`，接收应用程序的写入，当缓冲区写满了，就调用装饰的输出流`OutputStream out`。`PrintStream`比较特殊，涉及到`Writer`，我们放到`Writer`部分展开。
 ```java
 class BufferedOutputStream extends FilterOutputStream {
@@ -263,7 +264,7 @@ class BufferedOutputStream extends FilterOutputStream {
 ```
 
 # Reader
-![reader_class_diagram](https://p.ipic.vip/25ci0j.jpg)
+![write_class_diagram](https://pic.imgdb.cn/item/64a82a941ddac507cc3c63fe.jpg)
 一次读取`InputStream`的两个字节，并使用指定的字符集解析成对应字符。Java中一个`char`占用2`byte`，但对于UTF-8字符集，它的编码长度是可变的，用1`byte·来编码常见字符。
 > A char represents a character in Java (*). It is 2 bytes large (or 16 bits).
 That doesn't necessarily mean that every representation of a character is 2 bytes long. In fact many character encodings only reserve 1 byte for every character (or use 1 byte for the most common characters).
@@ -329,10 +330,7 @@ public class PushbackReader extends FilterReader {
 7. LineNumberReader: 增加字符流里的行号识别功能。
 # Writer
 与`Reader`方向相反，和`OutputStream`类似，不再赘述。
-![write_class_diagram](https://p.ipic.vip/d4y8ij.jpg)
-
+![](https://pic.imgdb.cn/item/64a82ab51ddac507cc3cc52b.jpg)
 # RandomAccessFile
 把文件当成一个`byte[]`，支持同时读写操作，读写指针做相应偏移。
-![](https://p.ipic.vip/bjqpu6.jpg)
-
-![random_class_diagram](https://p.ipic.vip/4tfurb.jpg)
+![random_class_diagram](https://pic.imgdb.cn/item/64a82ad11ddac507cc3d1a09.jpg)
