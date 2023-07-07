@@ -5,6 +5,7 @@ categories:
 - [Android]
 tags: Android, Animation, Animator
 math: true
+sticky: true
 ---
 
 # 动画原理
@@ -14,7 +15,7 @@ $$
 \frac{t}{duration} = \frac{AnimateValue}{end - start} \tag{1}
 $$
 
-![](https://p.ipic.vip/3vgwve.jpg)
+![](https://pic.imgdb.cn/item/64a830a11ddac507cc4fff21.jpg)
 
 # KeyFrame扩展
 
@@ -32,7 +33,7 @@ $$
 
 | KeyFrame.mFraction & mValue均匀线性分布                      | KeyFrame.mFraction线性，mValue 曲线分布                      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="https://p.ipic.vip/xw8u0r.jpg" style="zoom:50%;" /> | <img src="https://p.ipic.vip/9vuhf0.jpg" style="zoom:50%;" /> |
+| <img src="https://pic.imgdb.cn/item/64a830de1ddac507cc50c9b3.jpg" style="zoom:50%;" /> | <img src="https://pic.imgdb.cn/item/64a831441ddac507cc51f687.jpg" style="zoom:50%;" /> |
 
 
 
@@ -51,7 +52,7 @@ $Interpolator(t)\text{ where } t\in[0, 1]$其实就是一个函数，输入原�
 
 | 匀速运动 $Interpolator(t) = t$                               | 匀加速$Interpolator(t) = t^2$                                | 匀减速$Interpolator(t) = 1 - ( t - 1 ) ^ 2$                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="https://p.ipic.vip/nwt407.jpg" style="zoom:50%;" /> | <img src="https://p.ipic.vip/ajhcam.jpg" style="zoom:50%;" /> | <img src="https://p.ipic.vip/6whz0k.jpg" style="zoom:50%;" /> |
+| <img src="https://pic.imgdb.cn/item/64a8316b1ddac507cc524d64.jpg" style="zoom:50%;" /> | <img src="https://pic.imgdb.cn/item/64a831821ddac507cc527ec7.jpg" style="zoom:50%;" /> | <img src="https://pic.imgdb.cn/item/64a831971ddac507cc52a9c4.jpg" style="zoom:50%;" /> |
 
 
 
