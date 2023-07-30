@@ -23,6 +23,7 @@ Lock接口定义了关于Lock的三个主要操作：
 总体流程如图
 ![](https://s3.uuu.ovh/imgs/2023/07/30/602b88085d477f84.png)
 
+
 ```java
 /**
     * Creates an instance of {@code ReentrantLock}.
@@ -44,7 +45,7 @@ public ReentrantLock(boolean fair) {
 ```    
 公平锁指线程 `lock` 时得按顺序排队，等待队列为空时才抢占锁，否则进入队列排队等待。
 
-# Thread A 加锁失败，进入等待
+# Thread B 加锁失败，进入等待
 ```java java.util.concurrent.locks.ReentrantLock.FairSync#lock
 final void lock() {
     acquire(1);
@@ -223,33 +224,33 @@ private final boolean parkAndCheckInterrupt() {
 ```java java.util.concurrent.locks.LockSupport#park(java.lang.Object)
 
 /**
-    * Disables the current thread for thread scheduling purposes unless the
-    * permit is available.
-    *
-    * <p>If the permit is available then it is consumed and the call returns
-    * immediately; otherwise
-    * the current thread becomes disabled for thread scheduling
-    * purposes and lies dormant until one of three things happens:
-    *
-    * <ul>
-    * <li>Some other thread invokes {@link #unpark unpark} with the
-    * current thread as the target; or
-    *
-    * <li>Some other thread {@linkplain Thread#interrupt interrupts}
-    * the current thread; or
-    *
-    * <li>The call spuriously (that is, for no reason) returns.
-    * </ul>
-    *
-    * <p>This method does <em>not</em> report which of these caused the
-    * method to return. Callers should re-check the conditions which caused
-    * the thread to park in the first place. Callers may also determine,
-    * for example, the interrupt status of the thread upon return.
-    *
-    * @param blocker the synchronization object responsible for this
-    *        thread parking
-    * @since 1.6
-    */
+ * Disables the current thread for thread scheduling purposes unless the
+ * permit is available.
+ *
+ * <p>If the permit is available then it is consumed and the call returns
+ * immediately; otherwise
+ * the current thread becomes disabled for thread scheduling
+ * purposes and lies dormant until one of three things happens:
+ *
+ * <ul>
+ * <li>Some other thread invokes {@link #unpark unpark} with the
+ * current thread as the target; or
+ *
+ * <li>Some other thread {@linkplain Thread#interrupt interrupts}
+ * the current thread; or
+ *
+ * <li>The call spuriously (that is, for no reason) returns.
+ * </ul>
+ *
+ * <p>This method does <em>not</em> report which of these caused the
+ * method to return. Callers should re-check the conditions which caused
+ * the thread to park in the first place. Callers may also determine,
+ * for example, the interrupt status of the thread upon return.
+ *
+ * @param blocker the synchronization object responsible for this
+ *        thread parking
+ * @since 1.6
+ */
 public static void park(Object blocker) {
     Thread t = Thread.currentThread();
     setBlocker(t, blocker);
@@ -257,46 +258,46 @@ public static void park(Object blocker) {
     setBlocker(t, null);
 }
 ```    
-到这里，Thread A 线程加锁失败，进入等待队列，休眠，等待其他线程释放锁，通知唤醒等待队列的线程，重新竞争获得锁。我们开始看其他线程释放锁流程。
+到这里，Thread B 线程加锁失败，进入等待队列，休眠，等待其他线程释放锁，通知唤醒等待队列的线程，重新竞争获得锁。我们开始看其他线程释放锁流程。
 # Thread B 释放锁
 ```java java.util.concurrent.locks.ReentrantLock#unlock
 
-    /**
-     * Attempts to release this lock.
-     *
-     * <p>If the current thread is the holder of this lock then the hold
-     * count is decremented.  If the hold count is now zero then the lock
-     * is released.  If the current thread is not the holder of this
-     * lock then {@link IllegalMonitorStateException} is thrown.
-     *
-     * @throws IllegalMonitorStateException if the current thread does not
-     *         hold this lock
-     */
-    public void unlock() {
-        sync.release(1);
-    }
+/**
+ * Attempts to release this lock.
+ *
+ * <p>If the current thread is the holder of this lock then the hold
+ * count is decremented.  If the hold count is now zero then the lock
+ * is released.  If the current thread is not the holder of this
+ * lock then {@link IllegalMonitorStateException} is thrown.
+ *
+ * @throws IllegalMonitorStateException if the current thread does not
+ *         hold this lock
+ */
+public void unlock() {
+    sync.release(1);
+}
 ```
 ```java java.util.concurrent.locks.AbstractQueuedSynchronizer#release
 
-    /**
-     * Releases in exclusive mode.  Implemented by unblocking one or
-     * more threads if {@link #tryRelease} returns true.
-     * This method can be used to implement method {@link Lock#unlock}.
-     *
-     * @param arg the release argument.  This value is conveyed to
-     *        {@link #tryRelease} but is otherwise uninterpreted and
-     *        can represent anything you like.
-     * @return the value returned from {@link #tryRelease}
-     */
-    public final boolean release(int arg) {
-        if (tryRelease(arg)) {
-            Node h = head;
-            if (h != null && h.waitStatus != 0)
-                unparkSuccessor(h);
-            return true;
-        }
-        return false;
+/**
+ * Releases in exclusive mode.  Implemented by unblocking one or
+ * more threads if {@link #tryRelease} returns true.
+ * This method can be used to implement method {@link Lock#unlock}.
+ *
+ * @param arg the release argument.  This value is conveyed to
+ *        {@link #tryRelease} but is otherwise uninterpreted and
+ *        can represent anything you like.
+ * @return the value returned from {@link #tryRelease}
+ */
+public final boolean release(int arg) {
+    if (tryRelease(arg)) {
+        Node h = head;
+        if (h != null && h.waitStatus != 0)
+            unparkSuccessor(h);
+        return true;
     }
+    return false;
+}
 ```
 尝试释放锁，然后unpark 锁等待队列的第一个线程，使其进入等待调度状态。
 ```java java.util.concurrent.locks.ReentrantLock.Sync#tryRelease
@@ -316,39 +317,39 @@ protected final boolean tryRelease(int releases) {
 ```java java.util.concurrent.locks.AbstractQueuedSynchronizer#unparkSuccessor
 
 /**
-    * Wakes up node's successor, if one exists.
-    *
-    * @param node the node
-    */
+* Wakes up node's successor, if one exists.
+*
+* @param node the node
+*/
 private void unparkSuccessor(Node node) {
     /*
-        * If status is negative (i.e., possibly needing signal) try
-        * to clear in anticipation of signalling.  It is OK if this
-        * fails or if status is changed by waiting thread.
-        */
+    * If status is negative (i.e., possibly needing signal) try
+    * to clear in anticipation of signalling.  It is OK if this
+    * fails or if status is changed by waiting thread.
+    */
     int ws = node.waitStatus;
     if (ws < 0)
-        compareAndSetWaitStatus(node, ws, 0);
+    compareAndSetWaitStatus(node, ws, 0);
 
     /*
-        * Thread to unpark is held in successor, which is normally
-        * just the next node.  But if cancelled or apparently null,
-        * traverse backwards from tail to find the actual
-        * non-cancelled successor.
-        */
+    * Thread to unpark is held in successor, which is normally
+    * just the next node.  But if cancelled or apparently null,
+    * traverse backwards from tail to find the actual
+    * non-cancelled successor.
+    */
     Node s = node.next;
     if (s == null || s.waitStatus > 0) {
         s = null;
         for (Node t = tail; t != null && t != node; t = t.prev)
-            if (t.waitStatus <= 0)
-                s = t;
+        if (t.waitStatus <= 0)
+        s = t;
     }
     if (s != null)
-        LockSupport.unpark(s.thread);
+    LockSupport.unpark(s.thread);
 }
 ```
 传入h 指向的是哨兵头节点，找到锁等待队列里第一个 `waitStatus <= 0` 即 SIGNAL CONDITION PROPAGATE 三者之一的节点，并 unpark 唤醒节点里的线程。
-当上文 Thread A 加锁失败，进入等待锁队列的节点
+当上文 Thread B 加锁失败，进入等待锁队列的节点
 1. 是这个头节点，加锁线程被唤醒，thread schedule 分配它运行后，它从park中返回，并检测记录 interrupted，进入下一次循环，此时它的前驱就是head 哨兵节点，再次执行 `tryAcquire` 流程。
 2. 不是头节点，那么等待前面的节点都纷纷通过 `tryAcquire` 获得锁，然后释放锁后，文中上一个加锁的线程所在节点最终会成为头节点。
 
@@ -360,32 +361,33 @@ private void unparkSuccessor(Node node) {
 3. The call spuriously (that is, for no reason) returns.
 
 ``` java java.util.concurrent.locks.AbstractQueuedSynchronizer#acquireQueued
-    /**
-     * Acquires in exclusive uninterruptible mode for thread already in
-     * queue. Used by condition wait methods as well as acquire.
-     *
-     * @param node the node
-     * @param arg the acquire argument
-     * @return {@code true} if interrupted while waiting
-     */
-    final boolean acquireQueued(final Node node, int arg) {
-        boolean failed = true;
-        try {
-            boolean interrupted = false;
-            for (;;) {
-                final Node p = node.predecessor();
-                if (p == head && tryAcquire(arg)) {
-                    setHead(node);
-                    p.next = null; // help GC
-                    failed = false;
-                    return interrupted;
-                }
-                if (shouldParkAfterFailedAcquire(p, node) &&
-                    parkAndCheckInterrupt())
-                    interrupted = true;
+/**
+ * Acquires in exclusive uninterruptible mode for thread already in
+ * queue. Used by condition wait methods as well as acquire.
+ *
+ * @param node the node
+ * @param arg the acquire argument
+ * @return {@code true} if interrupted while waiting
+ */
+final boolean acquireQueued(final Node node, int arg) {
+    boolean failed = true;
+    try {
+        boolean interrupted = false;
+        for (;;) {
+            final Node p = node.predecessor();
+            if (p == head && tryAcquire(arg)) {
+                setHead(node);
+                p.next = null; // help GC
+                failed = false;
+                return interrupted;
             }
-        } finally {
-            if (failed)
-                cancelAcquire(node);
+            if (shouldParkAfterFailedAcquire(p, node) &&
+                parkAndCheckInterrupt())
+                interrupted = true;
         }
+    } finally {
+        if (failed)
+            cancelAcquire(node);
     }
+}
+```
