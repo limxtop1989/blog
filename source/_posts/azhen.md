@@ -4,7 +4,7 @@ date: 2023-01-08 11:53:54
 tags: 阿珍
 ---
 
-![](https://p.ipic.vip/pao9qx.jpg)
+![](https://s3.uuu.ovh/imgs/2023/12/11/ccc6a7dd9894f5f3.jpeg)
 
 
 作者：火山
