@@ -1,7 +1,7 @@
 ---
 title: 英语自学
 date: 2021-08-18 21:23:28
-tags: 英语自学指南，英语,自学,入门,指南,方法论,词典
+tags: 英语,自学,英语自学指南,入门,指南,方法论,词典
 math: true
 sticky: true
 categories:
@@ -9,7 +9,7 @@ categories:
 ---
 
 # 题记
-笔者个人所见，很多同学投入可观的时间和精力，学习英语，但最后大学毕业，连看英文文档的能力和勇气都没有，功败垂成，这很令人惋惜。本文对此展开深入的分析和解释，从而悟出学习掌握新语言读写听说能力的根本方法和策略，它们很简单，简单到如同每天清晨醒来刷牙洗漱，也不需要占用太多额外的时间。在此分享给大家，读懂原理，然后按部就班跟着做就好了，理论上可以帮助大家早日脱离苦海，学成归来。
+笔者个人所见，很多同学投入可观的时间和精力，学习英语，但最后大学毕业，连看英文文档的能力和勇气都没有，功败垂成，这很令人惋惜。本文对此展开深入的分析和解释，从而悟出学习掌握新语言读写听说能力的根本方法和策略，它们很简单，简单到如同每天清晨醒来刷牙洗漱，不需要占用太多额外的时间，更不用花钱报班学习。在此分享给大家，读懂原理，然后按部就班跟着做就好了，理论上可以帮助大家早日脱离苦海，学成归来。
 
 喜欢看视频，或者不方便阅读的朋友，可以看视频版。内容本质没区别，只是更加精简，但目前只包含思想篇，这部分同样重要，实践部分还得回来阅读文章后半部分，后期有空补录：）
 
@@ -206,7 +206,7 @@ a flat container with low sides, for serving food from or cooking food in ⇨ bo
 [欧洲共同语言参考标准](https://www.coe.int/en/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale)，这里应该也会提供很多资源，有时间可以探究一下。
 
 ## 词汇记忆工具
-[单词记忆卡片](https://bewaters.me/2023/05/07/word-card-user-manual/) 类似百词斩，使用艾宾浩斯遗忘曲线调度记忆任务，唯一不同的是，本人自主开发，完全践行本篇文章所阐述的学习英语方法论和理念，配套使用，效果可能遥遥领先市面现有的应用软件。基本功能已经成型，闲暇时间依旧会持续迭代开发新功能，敬请谅解和期待。
+[单词记忆闪卡](https://play.google.com/store/apps/details?id=com.maxim.wordcard.free) 点击打开play store安装，类似百词斩，使用艾宾浩斯遗忘曲线调度记忆任务，唯一不同的是，本人自主开发，完全践行本篇文章所阐述的学习英语方法论和理念，配套使用，效果可能遥遥领先市面现有的应用软件。基本功能已经成型，闲暇时间依旧会持续迭代开发新功能，敬请谅解和期待。更多内容见[单词记忆闪卡博文](https://bewaters.me/2023/05/07/word-card-user-manual/)
 
 
 # 审慎对待任何学习方法 
@@ -246,7 +246,17 @@ a flat container with low sides, for serving food from or cooking food in ⇨ bo
 
 ![](https://s3.bmp.ovh/imgs/2021/08/305a1480dcfc9dbd.png)
 
-Mac上会有如下界面异常，
+### 快捷键设定
+Preference -> Hot keys -> 勾选 "Use the following hotkey to translate a word from clipboard:" -> 输入框输入你偏好的快捷键就可以在其他应用通过复制单词，快速查词，我是设定 cmd + c + c.
+
+Mac 上如果 cmd + c + c 无效，请按如下修改设定解决：
+1. System Preferences
+2. Security & Privacy
+3. Privacy tab
+4. Accessibility section
+5. GoldenDict => activate the check
+
+Mac上会有如下界面异常：
 
 <img src="https://s3.bmp.ovh/imgs/2021/08/bad36e68350614d4.png" style="zoom:100%;" />
 
@@ -257,6 +267,8 @@ Mac上会有如下界面异常，
 最后，可以把这个选项勾选。
 
 ![](https://s3.bmp.ovh/imgs/2021/08/79f7c59f09d94491.png)
+
+
 
 ## Android
 1. 下载Android APK并安装：[下载链接](http://goldendict.mobi/downloads/android/free/)
@@ -306,6 +318,9 @@ Mac上会有如下界面异常，
 # 听说
 使用podcast 订阅BBC learning English等练习听力，洗碗，坐公交都可以听听，坐在屋子无所事事的时候，也可以播放有一搭没一搭的听，实在听不懂的，可以将Pixel 手机的系统语音实时转字幕功能打开，看文字对比。YouTube看英语视频。去参加英语角，平时和朋友聊天用英语说，都是不错的选择。不说也行，只要习惯用英语思考也可以，让自己沉浸在英语环境里。这些事情都是我们日常生活，日复一日再做的，只是切换为英语了，所以，我们并没有花额外的时间投入英语，但我们的英语水平可以预见地，渐次提高，水到渠成。
 <img src="https://s3.uuu.ovh/imgs/2023/04/17/688470c7b93f1e2c.png" style="zoom:25%;" />
+
+[发音](https://www.bilibili.com/video/BV1jN411e7Rb?p=15&vd_source=0ae9636ed3537002d8b4ba4c6adc45f4)
+[语音素发音图解口形及发音方法](https://zhuanlan.zhihu.com/p/268293750)
 
 # Recap 重点回顾
 学习英语最重要的是个人思想上的转变，斯以为自己如果觉得英语不重要，没用，完全很容易半途而废。只有坚信不疑英语有用，重要，特别是可以预见英语对自己的工作生活有积极影响帮助的时候，对于大部分学生而言，确实如此，学习英语的动力自然后劲十足，甚至百折不挠。英语难度由读写听说递增，学习顺序也理应如此，它和我们常说的听说读写南辕北辙。掌握英语得训练，训练的核心是输出，写作和口语表达，特别是其间的思考都应该用英语，切记在思维里先用中文思考，再翻译为英语用口语表达。更不用说平时的阅读了（切记不要翻译为中文再理解文字含义），但输出之前需要有扎实的基础，需要输入的训练，掌握词汇和语法，并做足够的阅读，必须安装使用英英词典，帮你在阅读遇到诸多生词，快速排除障碍。
